@@ -1,6 +1,8 @@
 <template>
   <div>
     bikes list
+    <p>Frame: {{bike.results[0].Frame}}</p>
+    <p>Bars: {{bike.results[0].Bars}}</p>
   </div>
 </template>
 
@@ -8,12 +10,12 @@
 export default {
   name: 'BikesList',
   data() {
-      return {
-          bike: {}
-      }
+    return {
+      bike: {},
+    }
   },
-  created : function() {
-      this.fetchData()
+  created: function() {
+    this.fetchData()
   },
   methods: {
     fetchData: async function() {
@@ -34,4 +36,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+p{
+  text-align:left;
+}
+  </style>
