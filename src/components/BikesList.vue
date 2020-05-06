@@ -25,6 +25,7 @@
           <li>Chain: {{ item.Chain }}</li>
           <li>Cassette: {{ item.Cassette }}</li>
           <li>Pedals: {{ item.Pedals }}</li>
+          <li>Image: {{ item.Image }}</li>
           <img :src="item.Image" :alt="item.Name" />
           <li></li>
         </ul>
