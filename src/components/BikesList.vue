@@ -26,7 +26,7 @@
           <li>Cassette: {{ item.Cassette }}</li>
           <li>Pedals: {{ item.Pedals }}</li>
           <li>Image: {{ item.Image }}</li>
-          <img :src="item.Image" :alt="item.Name" />
+          <img :src="item.Image" />
           <li></li>
         </ul>
       </li>
