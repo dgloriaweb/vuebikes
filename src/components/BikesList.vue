@@ -25,6 +25,7 @@
           <li>Chain: {{ item.Chain }}</li>
           <li>Cassette: {{ item.Cassette }}</li>
           <li>Pedals: {{ item.Pedals }}</li>
+          <img :src="item.image" :alt="item.Name" />
           <li></li>
         </ul>
       </li>
@@ -60,8 +61,17 @@ export default {
         Chain: '',
         Cassette: '',
         Pedals: '',
+        image: 'image/jpg',
       },
     }
+  },
+  computed: {
+    image: function() {
+      return `${this.bike.image}`
+    },
+    moviePath: function() {
+      return `/movie/${this.movie.id}`
+    },
   },
   created: function() {
     this.fetchData()
