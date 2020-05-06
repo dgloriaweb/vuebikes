@@ -25,7 +25,7 @@
           <li>Chain: {{ item.Chain }}</li>
           <li>Cassette: {{ item.Cassette }}</li>
           <li>Pedals: {{ item.Pedals }}</li>
-          <img :src="item.image" :alt="item.Name" />
+          <img :src="item.Image" :alt="item.Name" />
           <li></li>
         </ul>
       </li>
@@ -61,7 +61,7 @@ export default {
         Chain: '',
         Cassette: '',
         Pedals: '',
-        image: 'image/jpg',
+        Image: 'image/jpg',
       },
     }
   },
